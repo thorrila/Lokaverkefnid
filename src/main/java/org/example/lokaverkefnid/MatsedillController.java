@@ -17,6 +17,7 @@ public class MatsedillController {
     @FXML
     private ListView<String> matsedillListView;
     @FXML
+
     private Button alltButton;
     @FXML
     private Button kvoldverdurButton;
