@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="fxml">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="vidmotshlutir">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/karfa-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/karfa-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/matsedill-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/matsedill-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/retturInfo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/retturInfo-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/takk-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/takk-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +64,28 @@
       <option name="project" value="LOCAL" />
       <updated>1712669290668</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="vidmotshlutir">
+      <option name="closed" value="true" />
+      <created>1712672466538</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712672466538</updated>
+    </task>
+    <task id="LOCAL-00003" summary="vidmotshlutir">
+      <option name="closed" value="true" />
+      <created>1712672547477</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712672547477</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fxml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fxml" />
+    <MESSAGE value="vidmotshlutir" />
+    <option name="LAST_COMMIT_MESSAGE" value="vidmotshlutir" />
   </component>
 </project>
