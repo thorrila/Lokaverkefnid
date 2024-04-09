@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="test">
+    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="leit bætt við">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712675303153</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="leit bætt við">
+      <option name="closed" value="true" />
+      <created>1712678489504</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712678489504</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +125,7 @@
     <MESSAGE value="fxml" />
     <MESSAGE value="vidmotshlutir" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="leit bætt við" />
+    <option name="LAST_COMMIT_MESSAGE" value="leit bætt við" />
   </component>
 </project>
