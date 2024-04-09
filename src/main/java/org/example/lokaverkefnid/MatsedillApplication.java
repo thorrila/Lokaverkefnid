@@ -16,7 +16,6 @@ public class MatsedillApplication extends Application {
         Parent matsedillRoot = matsedillLoader.load();
         Scene matsedill = new Scene(matsedillRoot, 600, 500); //(parent, width, height)
 
-
         //Setja upp senu fyrir matseðil
         stage.setTitle("Lokaverkefni");
         stage.setScene(matsedill);

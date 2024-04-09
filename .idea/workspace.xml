@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/matsedill-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/matsedill-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712683147317</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <option name="closed" value="true" />
+      <created>1712687319295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712687319295</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
