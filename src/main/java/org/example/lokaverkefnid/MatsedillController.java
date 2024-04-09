@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -39,7 +40,7 @@ public class MatsedillController {
     @FXML
     private Button karfaButton;
     //Allur listinn
-    private ObservableList<String> allurListinn = FXCollections.observableArrayList(
+    private final ObservableList<String> allurListinn = FXCollections.observableArrayList(
             "Morgunkorn", "Jógúrt", "Pönnukökur", "Egg og beikon", "Ristað brauð",
             "Salat", "Hamborgari", "Fiskur", "Steik", "Samloka", "Kjúklingur",
             "Pítsa", "Kók", "Pepsí", "Sódavatn", "Hvítvín", "Rauðvín", "Te", "Kaffi"
@@ -51,6 +52,18 @@ public class MatsedillController {
     private Button karfaTilBaka;
     @FXML
     private Button karfaGreida;
+
+    //Skipta um senu yfir í körfu
+    private Stage stage;
+    private Scene scene;
+    public void showKarfa(ActionEvent event) throws IOException {
+        FXMLLoader karfaLoader = new FXMLLoader(MatsedillApplication.class.getResource("karfa-view.fxml"));
+        Parent karfaRoot = karfaLoader.load();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(karfaRoot);
+        stage.setScene(scene);
+        stage.show();
+    }
 
 
         @FXML
@@ -72,7 +85,9 @@ public class MatsedillController {
         @FXML
         private void showAllt(){
         matsedillListView.setItems(FXCollections.observableArrayList("Morgunkorn", "Jógúrt", "Pönnukökur", "Egg og beikon", "Ristað brauð", "Salat", "Hamborgari", "Fiskur", "Steik", "Samloka", "Steik", "Kjúklingur", "Hamborgari", "Pítsa", "Fiskur", "Kók", "Pepsí", "Sódavatn", "Hvítvín", "Rauðvín", "Te", "Kaffi"));
-    }
+        }
+
+
         @FXML
         private void initialize(){
             //Byrjunarstaða matseðils er allur listinn
@@ -81,12 +96,11 @@ public class MatsedillController {
             leitTextField.textProperty().addListener((observable, oldValue, newValue) -> {
                 filterList(newValue);});
         }
-        public void filterList(String leitarord){
-               //ef ekkert er skrifað er listinn í heild sinni óbreyttur
+        //Leitarstika
+        private void filterList(String leitarord){
                 if (leitarord.isEmpty()) {
                     matsedillListView.setItems(allurListinn);
                 }
-                //ef leitarord er skrifað er listinn filteraður
                 else
                 {ObservableList<String> filteredList = allurListinn.stream()
                             .filter(item -> item.toLowerCase().contains(leitarord.toLowerCase()))
@@ -94,8 +108,6 @@ public class MatsedillController {
                     matsedillListView.setItems(filteredList);
                 }
             }
-
-
         }
 
 
