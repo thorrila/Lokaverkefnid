@@ -16,6 +16,7 @@ import java.io.IOException;
  */
 public class KarfaController {
 
+    //viðmótshlutir fyrir körfu
     public Button karfaGreida;
     private Stage stage;
     private Scene scene;

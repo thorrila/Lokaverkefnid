@@ -8,10 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -27,7 +24,6 @@ public class MatsedillController {
     @FXML
     private ListView<String> matsedillListView;
     @FXML
-
     private Button alltButton;
     @FXML
     private Button kvoldverdurButton;
@@ -45,9 +41,35 @@ public class MatsedillController {
             "Salat", "Hamborgari", "Fiskur", "Steik", "Samloka", "Kjúklingur",
             "Pítsa", "Kók", "Pepsí", "Sódavatn", "Hvítvín", "Rauðvín", "Te", "Kaffi"
     );
-    //viðmótshlutir fyrir rétti
 
-    //viðmótshlutir fyrir körfu
+    //Færa á réttur senu
+    @FXML
+    private ListView<Rettur> retturListView;
+    public void initialize() {
+        retturListView.setOnMouseClicked(event -> {
+            Rettur selectedRettur = retturListView.getSelectionModel().getSelectedItem();
+            if (selectedRettur != null && event.getClickCount() == 2) {
+                try {
+                    showRetturInfo(selectedRettur);
+                } catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+    private void showRetturInfo(Rettur rettur) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("retturinfo-view.fxml"));
+        Parent root = loader.load();
+        RetturController controller = loader.getController();
+        controller.setRettur(rettur);
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle(rettur.getNafn());
+        stage.show();
+    }
+
+
     @FXML
     private Button karfaTilBaka;
     @FXML
@@ -85,16 +107,6 @@ public class MatsedillController {
         @FXML
         private void showAllt(){
         matsedillListView.setItems(FXCollections.observableArrayList("Morgunkorn", "Jógúrt", "Pönnukökur", "Egg og beikon", "Ristað brauð", "Salat", "Hamborgari", "Fiskur", "Steik", "Samloka", "Steik", "Kjúklingur", "Hamborgari", "Pítsa", "Fiskur", "Kók", "Pepsí", "Sódavatn", "Hvítvín", "Rauðvín", "Te", "Kaffi"));
-        }
-
-
-        @FXML
-        private void initialize(){
-            //Byrjunarstaða matseðils er allur listinn
-            matsedillListView.setItems(allurListinn);
-            //Listeners á text field til að filtera með leitarorði
-            leitTextField.textProperty().addListener((observable, oldValue, newValue) -> {
-                filterList(newValue);});
         }
         //Leitarstika
         private void filterList(String leitarord){

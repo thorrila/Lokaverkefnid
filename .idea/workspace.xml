@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="Hér ættu leit með filter og flokkar að virka">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/KarfaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillApplication.java" afterDir="false" />
+    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="Sceneswitching methods added in KarfaController and MatsedillController">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/Rettur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/RetturController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/KarfaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/KarfaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/karfa-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/karfa-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/matsedill-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/matsedill-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/takk-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/takk-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/retturInfo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/retturInfo-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712687319295</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Sceneswitching methods added in KarfaController and MatsedillController">
+      <option name="closed" value="true" />
+      <created>1712703236174</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712703236174</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +153,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="leit bætt við" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="Sceneswitching methods added in KarfaController and MatsedillController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sceneswitching methods added in KarfaController and MatsedillController" />
   </component>
 </project>
