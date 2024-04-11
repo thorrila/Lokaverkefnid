@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -17,6 +18,7 @@ import java.io.IOException;
 public class KarfaController {
 
     public Button karfaGreida;
+    public ListView karfaList;
     private Stage stage;
     private Scene scene;
     @FXML

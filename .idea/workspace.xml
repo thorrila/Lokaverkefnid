@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="Sceneswitching methods added in KarfaController and MatsedillController">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/RetturController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/eggogbeikon-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/hamborgari-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/kaffi-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/kok-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/pitsa-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/salat-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/samloka-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/te-view.fxml" afterDir="false" />
+    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="Fxml files for all food items added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/Rettur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/karfa-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/karfa-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/retturInfo-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/takk-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/takk-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/KarfaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/KarfaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/RetturController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/RetturController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,6 +55,7 @@
     "Application.MatsedillApplication.executor": "Run",
     "Application.MenuApplication.executor": "Run",
     "Maven.Lokaverkefnid [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
+    "Maven.Lokaverkefnid [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:help].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -153,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712703236174</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fxml files for all food items added">
+      <option name="closed" value="true" />
+      <created>1712876587695</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712876587695</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +173,7 @@
     <MESSAGE value="leit bætt við" />
     <MESSAGE value="update" />
     <MESSAGE value="Sceneswitching methods added in KarfaController and MatsedillController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sceneswitching methods added in KarfaController and MatsedillController" />
+    <MESSAGE value="Fxml files for all food items added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fxml files for all food items added" />
   </component>
 </project>
