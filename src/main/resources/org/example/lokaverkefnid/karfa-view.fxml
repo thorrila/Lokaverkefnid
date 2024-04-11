@@ -28,6 +28,6 @@
             <Font name="Chalkduster" size="13.0" />
          </font>
       </Label>
-      <ListView layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="karfaList" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

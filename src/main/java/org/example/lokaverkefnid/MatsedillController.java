@@ -9,9 +9,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -41,9 +41,9 @@ public class MatsedillController {
     private Button karfaButton;
     //Allur listinn
     private final ObservableList<String> allurListinn = FXCollections.observableArrayList(
-            "Morgunkorn", "Jógúrt", "Pönnukökur", "Egg og beikon", "Ristað brauð",
-            "Salat", "Hamborgari", "Fiskur", "Steik", "Samloka", "Kjúklingur",
-            "Pítsa", "Kók", "Pepsí", "Sódavatn", "Hvítvín", "Rauðvín", "Te", "Kaffi"
+            "Morgunkorn", "Egg og beikon",
+            "Salat", "Hamborgari", "Steik", "Samloka",
+            "Pítsa", "Kók", "Te", "Kaffi"
     );
     //viðmótshlutir fyrir rétti
 
@@ -56,6 +56,7 @@ public class MatsedillController {
     //Skipta um senu yfir í körfu
     private Stage stage;
     private Scene scene;
+
     public void showKarfa(ActionEvent event) throws IOException {
         FXMLLoader karfaLoader = new FXMLLoader(MatsedillApplication.class.getResource("karfa-view.fxml"));
         Parent karfaRoot = karfaLoader.load();
@@ -65,26 +66,25 @@ public class MatsedillController {
         stage.show();
     }
 
-
         @FXML
         private void showDrykkir() {
-            matsedillListView.setItems(FXCollections.observableArrayList("Kók", "Pepsí", "Sódavatn", "Hvítvín", "Rauðvín", "Te", "Kaffi"));
+            matsedillListView.setItems(FXCollections.observableArrayList("Kók", "Te", "Kaffi"));
         }
         @FXML
         private void showMorgunverdur(){
-            matsedillListView.setItems(FXCollections.observableArrayList("Morgunkorn", "Jógúrt", "Pönnukökur", "Egg og beikon", "Ristað brauð"));
+            matsedillListView.setItems(FXCollections.observableArrayList("Morgunkorn", "Egg og beikon"));
         }
         @FXML
         private void showHadegisverdur(){
-            matsedillListView.setItems(FXCollections.observableArrayList("Salat", "Hamborgari", "Fiskur", "Steik", "Samloka"));
+            matsedillListView.setItems(FXCollections.observableArrayList("Salat", "Samloka"));
         }
         @FXML
         private void showKvoldverdur(){
-            matsedillListView.setItems(FXCollections.observableArrayList("Steik", "Kjúklingur", "Hamborgari", "Pítsa", "Fiskur"));
+            matsedillListView.setItems(FXCollections.observableArrayList("Steik", "Hamborgari", "Pítsa"));
         }
         @FXML
         private void showAllt(){
-        matsedillListView.setItems(FXCollections.observableArrayList("Morgunkorn", "Jógúrt", "Pönnukökur", "Egg og beikon", "Ristað brauð", "Salat", "Hamborgari", "Fiskur", "Steik", "Samloka", "Steik", "Kjúklingur", "Hamborgari", "Pítsa", "Fiskur", "Kók", "Pepsí", "Sódavatn", "Hvítvín", "Rauðvín", "Te", "Kaffi"));
+        matsedillListView.setItems(FXCollections.observableArrayList("Morgunkorn", "Salat", "Hamborgari", "Fiskur", "Samloka", "Steik", "Hamborgari", "Pítsa", "Kók", "Te", "Kaffi"));
         }
 
 
@@ -92,10 +92,67 @@ public class MatsedillController {
         private void initialize(){
             //Byrjunarstaða matseðils er allur listinn
             matsedillListView.setItems(allurListinn);
+            //Listeners á mousclicks
+            matsedillListView.setOnMouseClicked(event -> {
+                String selectedItem = matsedillListView.getSelectionModel().getSelectedItem();
+                if (selectedItem != null) {
+                    try {
+                        switchToSceneBasedOnItem(selectedItem, event);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+
             //Listeners á text field til að filtera með leitarorði
             leitTextField.textProperty().addListener((observable, oldValue, newValue) -> {
                 filterList(newValue);});
         }
+
+    private void switchToSceneBasedOnItem(String item, MouseEvent event) throws IOException {
+        if (item == null) return; // Nothing to do if no item is selected
+
+        String fxmlFile = ""; // Default FXML file
+        // Determine the scene to load based on the selected item
+        switch (item) {
+            case "Morgunkorn":
+                fxmlFile = "morgunkorn-view.fxml";
+                break;
+            case "Egg og beikon":
+                fxmlFile = "eggogbeikon-view.fxml";
+                break;
+            case "Salat":
+                fxmlFile = "salat-view.fxml";
+                break;
+            case "Hamborgari":
+                fxmlFile = "hamborgari-view.fxml";
+                break;
+            case "Samloka":
+                fxmlFile = "samloka-view.fxml";
+                break;
+            case "Pítsa":
+                fxmlFile = "pitsa-view.fxml";
+                break;
+            case "Kók":
+                fxmlFile = "kok-view.fxml";
+                break;
+            case "Te":
+                fxmlFile = "te-view.fxml";
+                break;
+            case "Kaffi":
+                fxmlFile = "kaffi-view.fxml";
+                break;
+        }
+
+        if (!fxmlFile.isEmpty()) {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            Parent root = loader.load();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+    }
         //Leitarstika
         private void filterList(String leitarord){
                 if (leitarord.isEmpty()) {

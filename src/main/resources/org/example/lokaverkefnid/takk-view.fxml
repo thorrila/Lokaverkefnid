@@ -9,7 +9,7 @@
    <children>
       <Label alignment="CENTER" layoutX="212.0" layoutY="149.0" text="Takk fyrir!">
          <font>
-            <Font name="Chalkduster" size="29.0" />
+            <Font name="Chalkduster" size="28.0" />
          </font>
       </Label>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" layoutY="200.0" text="Pöntunin þín er á leiðinni">
