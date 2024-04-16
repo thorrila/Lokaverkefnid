@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="Fxml files for all food items added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/Rettur.java" afterDir="false" />
+    <list default="true" id="29cf7871-6553-4133-84b3-8b40736b8abd" name="Changes" comment="SKil">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/steik-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/KarfaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/KarfaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/MatsedillController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/RetturController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lokaverkefnid/RetturController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/eggogbeikon-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/eggogbeikon-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/hamborgari-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/hamborgari-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/kaffi-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/kaffi-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/kok-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/kok-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/pitsa-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/pitsa-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/salat-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/salat-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/samloka-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/samloka-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/te-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/lokaverkefnid/te-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -45,13 +55,16 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2eraaq9qLF9oKljculAWYM4BWeB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.MatsedillApplication.executor": "Run",
     "Application.MenuApplication.executor": "Run",
     "Maven.Lokaverkefnid [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
@@ -62,8 +75,16 @@
     "git-widget-placeholder": "newMain",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/thorrielishalldoruson/Courses/Vidmotsforritun/Lokaverkefnid",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "CSS"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -152,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712876587695</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="SKil">
+      <option name="closed" value="true" />
+      <created>1712878452265</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712878452265</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +196,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fxml" />
     <MESSAGE value="vidmotshlutir" />
     <MESSAGE value="test" />
@@ -174,6 +204,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="Sceneswitching methods added in KarfaController and MatsedillController" />
     <MESSAGE value="Fxml files for all food items added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fxml files for all food items added" />
+    <MESSAGE value="SKil" />
+    <option name="LAST_COMMIT_MESSAGE" value="SKil" />
   </component>
 </project>

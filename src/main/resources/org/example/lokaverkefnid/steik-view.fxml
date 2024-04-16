@@ -5,18 +5,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lokaverkefnid.RetturController">
     <children>
-        <Label layoutX="226.0" layoutY="52.0" prefHeight="51.0" prefWidth="200.0" text="Kók">
+        <Label layoutX="226.0" layoutY="52.0" prefHeight="51.0" prefWidth="300.0" text="Steik">
             <font>
                 <Font name="Chalkduster" size="29.0" />
             </font>
         </Label>
-        <CheckBox layoutX="109.0" layoutY="128.0" mnemonicParsing="false" text="Coke" />
-        <CheckBox layoutX="109.0" layoutY="159.0" mnemonicParsing="false" text="Coke Zero" />
-        <CheckBox layoutX="109.0" layoutY="190.0" mnemonicParsing="false" text="Coke Cherry" />
+        <CheckBox layoutX="109.0" layoutY="128.0" mnemonicParsing="false" text="Með piparsósu" />
+        <CheckBox layoutX="109.0" layoutY="159.0" mnemonicParsing="false" text="Með béarnaise sósu" />
+        <CheckBox layoutX="109.0" layoutY="191.0" mnemonicParsing="false" text="Án sósu" />
         <Button fx:id="retturKarfa" layoutX="364.0" layoutY="291.0" onAction="#showKarfa" text="Setja í körfu" />
-        <Button fx:id="retturMatsedill" layoutX="450.0" layoutY="291.0" mnemonicParsing="false" onAction="#showMatsedill" text="Til baka" />
-        <Label layoutX="109.0" layoutY="252.0" text="Verð: 300kr" />
+        <Button fx:id="retturTilBaka" layoutX="450.0" layoutY="291.0" mnemonicParsing="false" onAction="#showMatsedill" text="Til Baka" />
+        <Label layoutX="109.0" layoutY="227.0" text="2000kr" />
     </children>
 </AnchorPane>

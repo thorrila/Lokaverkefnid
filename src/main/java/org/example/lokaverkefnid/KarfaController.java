@@ -11,6 +11,7 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @author Þorri Elís Halldóruson teh4@hi.is
@@ -18,7 +19,7 @@ import java.io.IOException;
 public class KarfaController {
 
     public Button karfaGreida;
-    public ListView karfaList;
+    public ListView<String> karfaList;
     private Stage stage;
     private Scene scene;
     @FXML

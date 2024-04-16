@@ -142,6 +142,9 @@ public class MatsedillController {
             case "Kaffi":
                 fxmlFile = "kaffi-view.fxml";
                 break;
+            case "Steik":
+                fxmlFile = "steik-view.fxml";
+                break;
         }
 
         if (!fxmlFile.isEmpty()) {

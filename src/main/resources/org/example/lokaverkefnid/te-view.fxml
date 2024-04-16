@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lokaverkefnid.RetturController">
     <children>
-        <Label layoutX="226.0" layoutY="52.0" prefHeight="51.0" prefWidth="148.0" text="Te">
+        <Label layoutX="226.0" layoutY="52.0" prefHeight="51.0" prefWidth="200.0" text="Te">
             <font>
                 <Font name="Chalkduster" size="28.0" />
             </font>
@@ -16,7 +16,7 @@
         <CheckBox layoutX="109.0" layoutY="159.0" mnemonicParsing="false" text="Grænt" />
         <CheckBox layoutX="109.0" layoutY="190.0" mnemonicParsing="false" text="Jasmín" />
         <Button fx:id="retturKarfa" layoutX="364.0" layoutY="291.0" onAction="#showKarfa" text="Setja í körfu" />
-        <Button fx:id="retturMatsedill" layoutX="423.0" layoutY="291.0" mnemonicParsing="false" onAction="#showMatsedill" text="Til baka" />
+        <Button fx:id="retturMatsedill" layoutX="450.0" layoutY="291.0" mnemonicParsing="false" onAction="#showMatsedill" text="Til baka" />
         <Label layoutX="109.0" layoutY="252.0" text="Verð: 400kr" />
     </children>
 </AnchorPane>

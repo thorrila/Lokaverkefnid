@@ -47,6 +47,7 @@ public class RetturController {
         stage.setScene(scene);
         stage.show();
     }
+
     public void showKarfa(ActionEvent event) throws IOException {
         FXMLLoader karfaLoader = new FXMLLoader(MatsedillApplication.class.getResource("karfa-view.fxml"));
         Parent karfaRoot = karfaLoader.load();
