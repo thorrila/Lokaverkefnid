@@ -1,5 +1,6 @@
 package org.example.lokaverkefnid;
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -26,6 +27,7 @@ public class KarfaController {
     public ListView<String> karfaList;
     public Button karfaGreida;
     public Button karfaTilBaka;
+
 
     /**
      * Aðferð sem sýnir matsedilinn. Þessi aðferð er kölluð þegar notandi ætlar að fara aftur á matsedils skjáinn.

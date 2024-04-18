@@ -18,20 +18,21 @@ import java.util.stream.Collectors;
 
 
 /**
- * Controller fyrir senur rétta.
+ * Controller fyrir senur allra rétta.
  * Leyfir notenda að panta réttinn og fara í körfuna eða til baka í matseðil
  * @author Þorri Elís Halldóruson teh4@hi.is
  */
 public class RetturController {
+    //Viðmótshlutir fyrir rétti
     public Button retturKarfa;
+    public Button retturMatsedill;
     private Stage stage;
     private Scene scene;
-    @FXML
-    private Button retturTilBaka;
 
     /**
+     * Aðferð sem fer með notenda í aftur matseðil
      *
-     * @param event
+     * @param event Atburður sem er framkvæmdur þegar smellt er á 'Til baka' hnapp
      * @throws IOException Ef það verður villa við að hlaða FXML skránni.
      */
     public void showMatsedill(ActionEvent event) throws IOException {
@@ -42,27 +43,21 @@ public class RetturController {
         stage.setScene(scene);
         stage.show();
     }
-
     /**
      * Aðferð sem fer með notenda í körfu
-     * @param event
+     *
+     * @param event Atburður sem er framkvæmdur þegar smellt er á 'Setja í körfu' hnapp
      * @throws IOException Ef það verður villa við að hlaða FXML skránni.
      */
     public void showKarfa(ActionEvent event) throws IOException {
         FXMLLoader karfaLoader = new FXMLLoader(MatsedillApplication.class.getResource("karfa-view.fxml"));
         Parent karfaRoot = karfaLoader.load();
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        KarfaController controller = karfaLoader.getController();
+        controller.karfaList.setItems(FXCollections.observableArrayList("Kók", "Te", "Kaffi"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(karfaRoot);
         stage.setScene(scene);
         stage.show();
-    }
-    private ListView<String> cartListView;
 
-    public void setRettur(ObservableList<Rettur> items) {
-        List<String> itemDescriptions = items.stream()
-                .map(Rettur::toString)
-                .collect(Collectors.toList());
-        cartListView.setItems(FXCollections.observableArrayList(itemDescriptions));
     }
 }
-

@@ -77,24 +77,6 @@ public class MatsedillController {
         private void showAllt(){
         matsedillListView.setItems(FXCollections.observableArrayList("Morgunkorn", "Salat", "Hamborgari", "Fiskur", "Samloka", "Steik", "Hamborgari", "Pítsa", "Kók", "Te", "Kaffi"));
         }
-     //Skipta um senu yfir í körfu
-        private Stage stage;
-        private Scene scene;
-
-     /**
-     * Aðferð sem sýnir körfuna.
-     * @param event Atburður sem kveikti á aðferðinni, framkvæmd með 'Karfa' hnappi
-     * @throws IOException Ef það verður villa við að hlaða FXML skránni.
-     */
-        public void showKarfa(ActionEvent event) throws IOException {
-        FXMLLoader karfaLoader = new FXMLLoader(MatsedillApplication.class.getResource("karfa-view.fxml"));
-        Parent karfaRoot = karfaLoader.load();
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(karfaRoot);
-        stage.setScene(scene);
-        stage.show();
-        }
-
     /**
      * Byrjunarstaða matseðils er allur listinn
      */
@@ -118,11 +100,30 @@ public class MatsedillController {
                 leitarstika(newValue);});
         }
 
+    //Skipta um senu yfir í körfu
+    private Stage stage;
+    private Scene scene;
+
+    /**
+     * Aðferð sem sýnir körfuna.
+     * @param event Atburður sem kveikti á aðferðinni, framkvæmd með 'Karfa' hnappi
+     * @throws IOException Ef það verður villa við að hlaða FXML skránni.
+     */
+    public void showKarfa(ActionEvent event) throws IOException {
+        FXMLLoader karfaLoader = new FXMLLoader(MatsedillApplication.class.getResource("karfa-view.fxml"));
+        Parent karfaRoot = karfaLoader.load();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(karfaRoot);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
     /**
      * Skiptir yfir í senu út frá hvaða réttur er valinn.
      * @param item
-     * @param event Atburður þegar smellt er á rétt í listview.
-     * @throws IOException
+     * @param event Atburður sem er framkvæmdur þegar smellt er á rétt í listview.
+     * @throws IOException Ef það verður villa við að hlaða FXML skránni.
      */
     private void showRettur(String item, MouseEvent event) throws IOException {
         if (item == null) return; // Ekkert gert ef ekkert er valið
