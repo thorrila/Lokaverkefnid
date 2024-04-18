@@ -50,6 +50,7 @@ public class RetturController {
      * @throws IOException Ef það verður villa við að hlaða FXML skránni.
      */
     public void showKarfa(ActionEvent event) throws IOException {
+
         FXMLLoader karfaLoader = new FXMLLoader(MatsedillApplication.class.getResource("karfa-view.fxml"));
         Parent karfaRoot = karfaLoader.load();
         KarfaController controller = karfaLoader.getController();
