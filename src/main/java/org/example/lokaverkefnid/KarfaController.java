@@ -14,17 +14,25 @@ import java.io.IOException;
 import java.util.List;
 
 /**
+ *Controller fyrir körfu
+ *Þessi klasi sér um að meðhöndla notendaviðmótshandlinga sem tengjast körfunni,
+ *eins og að fara til baka til matsedils eða halda áfram til staðfestingar.
+ *
  * @author Þorri Elís Halldóruson teh4@hi.is
  */
 public class KarfaController {
-
-    public Button karfaGreida;
-    public ListView<String> karfaList;
-    private Stage stage;
-    private Scene scene;
+    //Viðmótshlutir fyrir körfu
     @FXML
-    private Button karfaTilBaka;
+    public ListView<String> karfaList;
+    public Button karfaGreida;
+    public Button karfaTilBaka;
 
+    /**
+     * Aðferð sem sýnir matsedilinn. Þessi aðferð er kölluð þegar notandi ætlar að fara aftur á matsedils skjáinn.
+     *
+     * @param event Atburður sem kveikti á aðferðinni, framkvæmd með 'Til baka' hnappi
+     * @throws IOException Ef það verður villa við að hlaða FXML skránni fyrir matsedilinn.
+     */
     public void showMatsedill(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("matsedill-view.fxml"));
         Parent root = loader.load();
@@ -33,6 +41,12 @@ public class KarfaController {
         stage.setScene(scene);
         stage.show();
     }
+    /**
+     * Aðferð sem síðuna þegar notandi er búinn að panta. Þessi aðferð er kölluð þegar notandi ætlar að ljúka pöntun og greiða.
+     *
+     * @param event Atburður sem kveikti á aðferðinni, framkvæmd með 'Greiða' hnappi
+     * @throws IOException Ef það verður villa við að hlaða FXML skránni fyrir síðuna.
+     */
     public void showTakk(ActionEvent event) throws IOException{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("takk-view.fxml"));
         Parent root = loader.load();

@@ -20,11 +20,11 @@
          </font>
       </TextField>
       <ListView fx:id="matsedillListView" layoutX="201.0" layoutY="111.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button fx:id="kvoldverdurButton" layoutX="458.0" layoutY="148.0" onAction="#showKvoldverdur" text="Kvöldverður" />
-      <Button fx:id="morgunverdurButton" layoutX="458.0" layoutY="111.0" onAction="#showMorgunverdur" text="Morgunverður" />
-      <Button fx:id="hadegisverdurButton" layoutX="459.0" layoutY="185.0" onAction="#showHadegisverdur" text="Hádegisverður" />
-      <Button fx:id="drykkirButton" layoutX="457.0" layoutY="220.0" onAction="#showDrykkir" text="Drykkir" />
-      <Button fx:id="karfaButton" layoutX="462.0" layoutY="298.0" onAction="#showKarfa" text="Karfa" />
-      <Button fx:id="alltButton" layoutX="458.0" layoutY="259.0" mnemonicParsing="false" onAction="#showAllt" text="Allt" />
+      <Button fx:id="kvoldverdurButton" layoutX="460.0" layoutY="148.0" onAction="#showKvoldverdur" text="Kvöldverður" />
+      <Button fx:id="morgunverdurButton" layoutX="460.0" layoutY="111.0" onAction="#showMorgunverdur" text="Morgunverður" />
+      <Button fx:id="hadegisverdurButton" layoutX="460.0" layoutY="185.0" onAction="#showHadegisverdur" text="Hádegisverður" />
+      <Button fx:id="drykkirButton" layoutX="460.0" layoutY="220.0" onAction="#showDrykkir" text="Drykkir" />
+      <Button fx:id="karfaButton" layoutX="460.0" layoutY="298.0" onAction="#showKarfa" text="Karfa" />
+      <Button fx:id="alltButton" layoutX="460.0" layoutY="255.0" mnemonicParsing="false" onAction="#showAllt" text="Allt" />
    </children>
 </AnchorPane>

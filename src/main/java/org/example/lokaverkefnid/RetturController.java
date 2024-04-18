@@ -18,6 +18,8 @@ import java.util.stream.Collectors;
 
 
 /**
+ * Controller fyrir senur rétta.
+ * Leyfir notenda að panta réttinn og fara í körfuna eða til baka í matseðil
  * @author Þorri Elís Halldóruson teh4@hi.is
  */
 public class RetturController {
@@ -27,18 +29,11 @@ public class RetturController {
     @FXML
     private Button retturTilBaka;
 
-    private ObservableList<Rettur> retturIKorfu = FXCollections.observableArrayList();
-
-    @FXML
-    private void addToCart() {
-        // Assuming you have access to the item name and price here
-        String itemNafn = "Hamborgari"; // This should come from the item's actual data
-        int itemVerd = 1200; // This should come from the item's actual data
-
-        retturIKorfu.add(new Rettur(itemNafn, itemVerd));
-        // You might want to switch to the cart scene here or update a ListView in the current scene
-    }
-
+    /**
+     *
+     * @param event
+     * @throws IOException Ef það verður villa við að hlaða FXML skránni.
+     */
     public void showMatsedill(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("matsedill-view.fxml"));
         Parent root = loader.load();
@@ -48,13 +43,14 @@ public class RetturController {
         stage.show();
     }
 
+    /**
+     * Aðferð sem fer með notenda í körfu
+     * @param event
+     * @throws IOException Ef það verður villa við að hlaða FXML skránni.
+     */
     public void showKarfa(ActionEvent event) throws IOException {
         FXMLLoader karfaLoader = new FXMLLoader(MatsedillApplication.class.getResource("karfa-view.fxml"));
         Parent karfaRoot = karfaLoader.load();
-        //
-        RetturController retturController = karfaLoader.getController();
-        retturController.setRettur(retturIKorfu);
-
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(karfaRoot);
         stage.setScene(scene);

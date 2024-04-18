@@ -1,20 +1,19 @@
 package org.example.lokaverkefnid;
 
 /**
+ * Klasi fyrir gögn um rétti, svo sem nafn, verð og innihaldslýsing
  * @author Þorri Elís Halldóruson teh4@hi.is
  */
 public class Rettur {
     private String nafn;
     private int verd;
+    private String innihaldslysing;
 
-    public Rettur(String nafn, int verd) {
+    //Smiður fyrir rétt
+    public Rettur(String nafn, int verd, String innihaldslysing) {
         this.nafn = nafn;
         this.verd = verd;
-    }
-
-    public void CartItem(String name, int price) {
-        this.nafn = name;
-        this.verd = price;
+        this.innihaldslysing = innihaldslysing;
     }
 
     @Override
@@ -22,11 +21,10 @@ public class Rettur {
         return nafn + " - " + verd + "kr";
     }
 
-    // Getters and setters
+    //Getters og setters
     public String getNafn() {
         return nafn;
     }
-
     public void setNafn(String nafn) {
         this.nafn = nafn;
     }
@@ -38,4 +36,6 @@ public class Rettur {
     public void setVerd(int verd) {
         this.verd = verd;
     }
+
+    public void setInnihaldslysing(String innihaldslysing) {this.innihaldslysing = innihaldslysing; }
 }

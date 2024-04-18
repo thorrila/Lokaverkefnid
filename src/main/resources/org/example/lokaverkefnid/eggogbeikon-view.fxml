@@ -12,9 +12,9 @@
                 <Font name="Chalkduster" size="28.0" />
             </font>
         </Label>
-        <CheckBox layoutX="109.0" layoutY="128.0" mnemonicParsing="false" text="Sofsteikt egg" />
-        <CheckBox layoutX="109.0" layoutY="159.0" mnemonicParsing="false" text="Miðsteikt egg" />
-        <CheckBox layoutX="109.0" layoutY="190.0" mnemonicParsing="false" text="Harðsteikt egg" />
+        <CheckBox layoutX="109.0" layoutY="128.0" mnemonicParsing="false" text="Linsoðið egg" />
+        <CheckBox layoutX="109.0" layoutY="159.0" mnemonicParsing="false" text="Miðlungs soðið egg" />
+        <CheckBox layoutX="109.0" layoutY="190.0" mnemonicParsing="false" text="Harðsoðið egg" />
         <CheckBox layoutX="109.0" layoutY="221.0" mnemonicParsing="false" text="Beikon" />
         <Button fx:id="retturKarfa" layoutX="364.0" layoutY="291.0" onAction="#showKarfa" text="Setja í körfu" />
         <Button fx:id="retturMatsedill" layoutX="450.0" layoutY="291.0" mnemonicParsing="false" onAction="#showMatsedill" text="Til baka" />
